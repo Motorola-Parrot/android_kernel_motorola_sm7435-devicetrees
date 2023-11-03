@@ -74,8 +74,10 @@ ifeq ($(CONFIG_AVATRN_DTB),y)
 dtbo-$(CONFIG_ARCH_PARROT) += parrot-audio.dtbo \
                  parrot-audio-moto-avatrn-evb.dtbo
 endif
+ifeq ($(CONFIG_GENEVA_DTB),y)
 dtbo-$(CONFIG_ARCH_PARROT) += parrot-audio.dtbo \
                  parrot-audio-moto-geneva-evb.dtbo
+endif
 endif
 
 #remove useless qcom device tree in moto build
