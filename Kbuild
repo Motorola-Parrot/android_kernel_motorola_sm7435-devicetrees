@@ -45,6 +45,10 @@ ifeq ($(CONFIG_MONAI_DTB),y)
 dtbo-y += parrot-monai-wcn6755.dtbo
 endif
 
+ifeq ($(CONFIG_CUSCO_DTB),y)
+dtbo-y += parrot-cuscoi-wcn3990.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
