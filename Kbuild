@@ -35,6 +35,7 @@ endif
 
 ifeq ($(CONFIG_CUSCO_DTB),y)
 dtbo-y += parrot-cuscoi-bt.dtbo
+dtbo-y += parrot-cuscoi-noi-bt.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
