@@ -50,6 +50,10 @@ dtbo-y += parrot-cuscoi-wcn3990.dtbo
 dtbo-y += parrot-cuscoi-noi-wcn3990.dtbo
 endif
 
+ifeq ($(CONFIG_PAROS_DTB),y)
+dtbo-y += parrot-paros-wcn6755.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
